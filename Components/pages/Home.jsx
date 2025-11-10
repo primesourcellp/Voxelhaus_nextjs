@@ -163,177 +163,170 @@ const Home = () => {
     <div className="min-h-screen ">
           {/* Hero Section */}
           <section 
-            className="min-h-screen flex items-center relative overflow-x-hidden w-full"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
-        }}
+  className="min-h-screen flex items-center relative overflow-x-hidden w-full"
+  style={{
+    backgroundImage: `url(${heroImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed'
+  }}
+>
+  {/* Overlays */}
+  <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-black/60"></div>
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+  
+  {/* Glowing background shapes */}
+  <div className="absolute top-20 left-20 w-32 h-32 bg-[#00F0FF]/10 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-20 right-20 w-40 h-40 bg-[#0099FF]/10 rounded-full blur-3xl"></div>
+  
+  {/* ✅ Container — reduced left/right padding */}
+  <div className="relative z-10 overflow-hidden py-5 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-10 w-full">
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
+      
+      {/* LEFT CONTENT */}
+      <motion.div
+        variants={staggerChildren}
+        initial="hidden"
+        animate="show"
+        className="space-y-8"
       >
-        {/* Dark Overlay with Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-black/60"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-        
-        {/* Static Background Elements */}
-        <div className="absolute top-20 left-20 w-32 h-32 bg-[#00F0FF]/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-40 h-40 bg-[#0099FF]/10 rounded-full blur-3xl"></div>
-        
-        <div className="container-custom relative z-10 overflow-hidden py-35">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <motion.div
-              variants={staggerChildren}
-              initial="hidden"
-              animate="show"
-              className="space-y-8 px-4 lg:px-8"
+        <div className="space-y-4">
+          <motion.h1
+            variants={fadeInUp}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
+          >
+            <motion.span variants={fadeInUp} className="inline-block mr-2">
+              Turning Spaces into
+            </motion.span>
+            <motion.span
+              variants={fadeInUp}
+              className="bg-gradient-to-r from-[#00F0FF] to-[#0099FF] bg-clip-text text-transparent inline-block"
+              style={{ textShadow: '0 0 30px rgba(0, 240, 255, 0.5)' }}
+              whileHover={{
+                scale: 1.05,
+                textShadow: '0 0 40px rgba(0, 240, 255, 0.8)',
+              }}
             >
-              <div className="space-y-6">
-                <motion.h1
-                  variants={fadeInUp}
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
-                >
-                  <motion.span variants={fadeInUp} className="block">
-                    Turning Spaces into
-                  </motion.span>
-                  <motion.span
-                    variants={fadeInUp}
-                    className="bg-gradient-to-r from-[#00F0FF] to-[#0099FF] bg-clip-text text-transparent block"
-                    style={{ textShadow: '0 0 30px rgba(0, 240, 255, 0.5)' }}
-                    whileHover={{
-                      scale: 1.05,
-                      textShadow: '0 0 40px rgba(0, 240, 255, 0.8)',
-                    }}
-                  >
-                    Stunning Experiences
-                  </motion.span>
-                </motion.h1>
-                <motion.p
-                  variants={fadeInUp}
-                  className="text-xl text-gray-300 leading-relaxed"
-                  whileHover={{
-                    scale: 1.02,
-                    color: '#ffffff',
-                  }}
-                >
-                  Voxelhaus consultancy specializes in floor plans, virtual staging, and photo editing –
-                  delivering confidential, professional, and creative solutions tailored to your needs.
-                </motion.p>
-              </div>
-              
-              <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1 }}
-                className="flex flex-col sm:flex-row gap-4"
-              >
-                <motion.div
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ 
-                    opacity: 1, 
-                    x: 0
-                  }}
-                  transition={{ 
-                    duration: 0.8, 
-                    delay: 1.2
-                  }}
-                  whileHover={{ 
-                    scale: 1.08,
-                    boxShadow: '0 0 40px rgba(0, 240, 255, 0.8), 0 0 80px rgba(0, 240, 255, 0.4)',
-                    y: -5
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link 
-                    href="/contact"
-                    className="bg-gradient-to-r from-[#00F0FF] to-[#0099FF] text-black font-bold px-8 py-4 rounded-xl flex items-center justify-center space-x-2 text-lg transition-all duration-300 border-2 border-transparent hover:border-[#00F0FF]/50"
-                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                  >
-                    <span>Get a Free Quote</span>
-                    <ArrowRight size={20} />
-                  </Link>
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, x: 50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, delay: 1.4 }}
-                  whileHover={{ 
-                    scale: 1.08,
-                    boxShadow: '0 0 40px rgba(0, 240, 255, 0.8), 0 0 80px rgba(0, 240, 255, 0.4)',
-                    y: -5
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link 
-                    href="/contact"
-                    className="border-2 border-[#00F0FF] text-[#00F0FF] px-8 py-4 rounded-xl font-bold flex items-center justify-center space-x-2 text-lg hover:bg-[#00F0FF] hover:text-black transition-all duration-300 hover:shadow-2xl"
-                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                  >
-                    <MessageSquare size={20} />
-                    <span>Contact Us Today</span>
-                  </Link>
-                </motion.div>
-              </motion.div>
-
-              {/* Stats */}
-              <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.6 }}
-                className="grid grid-cols-3 gap-4 pt-8"
-              >
-                {[
-                  { number: "500+", label: "Projects Completed" },
-                  { number: "100+", label: "Happy Clients" },
-                  { number: "24/7", label: "Support" }
-                ].map((stat, index) => (
-                  <motion.div 
-                    key={stat.label}
-                    className="text-center p-4 rounded-xl bg-black/20 backdrop-blur-sm border border-[#00F0FF]/20 hover:border-[#00F0FF]/50 transition-all duration-300"
-                    initial={{ opacity: 0, y: 20, scale: 0.8 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    transition={{ duration: 0.6, delay: 1.8 + index * 0.2 }}
-                    whileHover={{ 
-                      scale: 1.05,
-                      boxShadow: '0 0 30px rgba(0, 240, 255, 0.3)',
-                      y: -5
-                    }}
-                  >
-                    <motion.div 
-                      className="text-3xl font-bold text-[#00F0FF]"
-                      style={{ textShadow: '0 0 20px rgba(0, 240, 255, 0.5)' }}
-                    >
-                      {stat.number}
-                    </motion.div>
-                    <div className="text-sm text-gray-400 mt-2">{stat.label}</div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="relative flex items-center justify-center"
-            >
-              <div className="w-full max-w-lg relative">
-                <img
-                  src={houseAnimationGif}
-                  alt="3D House Construction Animation"
-                  className="w-full h-auto rounded-2xl shadow-2xl"
-                  style={{
-                    filter: 'drop-shadow(0 0 20px rgba(0, 0, 0, 0.3))',
-                    maxHeight: '500px',
-                    objectFit: 'cover'
-                  }}
-                />
-                
-                
-              </div>
-            </motion.div>
-          </div>
+              Stunning Experiences
+            </motion.span>
+          </motion.h1>
+          <motion.p
+            variants={fadeInUp}
+            className="text-lg md:text-xl text-gray-300 leading-relaxed"
+            whileHover={{ scale: 1.02, color: '#ffffff' }}
+          >
+            Voxelhaus consultancy specializes in floor plans, virtual staging, and photo editing – 
+            delivering confidential, professional, and creative solutions tailored to your needs.
+          </motion.p>
         </div>
-      </section>
+
+        {/* CTA BUTTONS */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1 }}
+          className="flex flex-col sm:flex-row gap-4"
+        >
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 1.2 }}
+            whileHover={{ 
+              scale: 1.08,
+              boxShadow: '0 0 40px rgba(0, 240, 255, 0.8), 0 0 80px rgba(0, 240, 255, 0.4)',
+              y: -5
+            }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Link 
+              href="/contact"
+              className="bg-gradient-to-r from-[#00F0FF] to-[#0099FF] text-black font-bold px-8 py-4 rounded-xl flex items-center justify-center space-x-2 text-lg transition-all duration-300 border-2 border-transparent hover:border-[#00F0FF]/50"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
+              <span>Get a Free Quote</span>
+              <ArrowRight size={20} />
+            </Link>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 1.4 }}
+            whileHover={{ 
+              scale: 1.08,
+              boxShadow: '0 0 40px rgba(0, 240, 255, 0.8), 0 0 80px rgba(0, 240, 255, 0.4)',
+              y: -5
+            }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Link 
+              href="/contact"
+              className="border-2 border-[#00F0FF] text-[#00F0FF] px-8 py-4 rounded-xl font-bold flex items-center justify-center space-x-2 text-lg hover:bg-[#00F0FF] hover:text-black transition-all duration-300 hover:shadow-2xl"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
+              <MessageSquare size={20} />
+              <span>Contact Us Today</span>
+            </Link>
+          </motion.div>
+        </motion.div>
+
+        {/* STATS */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.6 }}
+          className="grid grid-cols-3 gap-4 pt-6"
+        >
+          {[
+            { number: "500+", label: "Projects Completed" },
+            { number: "100+", label: "Happy Clients" },
+            { number: "24/7", label: "Support" }
+          ].map((stat, index) => (
+            <motion.div 
+              key={stat.label}
+              className="text-center p-4 rounded-xl bg-black/20 backdrop-blur-sm border border-[#00F0FF]/20 hover:border-[#00F0FF]/50 transition-all duration-300"
+              initial={{ opacity: 0, y: 20, scale: 0.8 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.6, delay: 1.8 + index * 0.2 }}
+              whileHover={{ 
+                scale: 1.05,
+                boxShadow: '0 0 30px rgba(0, 240, 255, 0.3)',
+                y: -5
+              }}
+            >
+              <motion.div 
+                className="text-3xl font-bold text-[#00F0FF]"
+                style={{ textShadow: '0 0 20px rgba(0, 240, 255, 0.5)' }}
+              >
+                {stat.number}
+              </motion.div>
+              <div className="text-sm text-gray-400 mt-2">{stat.label}</div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
+
+      {/* RIGHT IMAGE */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+        className="relative flex items-center justify-center"
+      >
+        <div className="w-full max-w-lg relative">
+          <img
+            src={houseAnimationGif}
+            alt="3D House Construction Animation"
+            className="w-full h-auto rounded-2xl shadow-2xl object-cover max-h-[500px]"
+            style={{ filter: 'drop-shadow(0 0 20px rgba(0, 0, 0, 0.3))' }}
+          />
+        </div>
+      </motion.div>
+    </div>
+  </div>
+</section>
+
 
       {/* About Our Company */}
       <section className="py-20 px-6 md:px-12 bg-gray-900 relative overflow-hidden">
@@ -343,7 +336,7 @@ const Home = () => {
           <div className="absolute bottom-20 right-10 w-40 h-40 bg-[#0099FF] rounded-full blur-3xl"></div>
         </div>
         
-        <div className="container-custom relative z-10">
+        <div className="relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -80 }}
@@ -452,7 +445,7 @@ const Home = () => {
           <div className="absolute bottom-10 left-20 w-32 h-32 bg-[#0099FF] rounded-full blur-3xl"></div>
         </div>
 
-        <div className="container-custom relative z-10">
+        <div className=" relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -643,7 +636,7 @@ const Home = () => {
           <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#0099FF] rounded-full blur-3xl"></div>
         </div>
 
-        <div className="container-custom relative z-10">
+        <div className="relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -771,7 +764,7 @@ const Home = () => {
           <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#0099FF] rounded-full blur-3xl"></div>
         </div>
 
-        <div className="container-custom relative z-10">
+        <div className="relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -915,7 +908,7 @@ const Home = () => {
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
         
-        <div className="container-custom relative z-10">
+        <div className="relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
