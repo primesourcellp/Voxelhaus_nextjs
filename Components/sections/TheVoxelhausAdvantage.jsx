@@ -39,7 +39,7 @@ const TheVoxelhausAdvantage = () => {
 
   return (
     <section className="py-20 px-6 md:px-12 bg-gray-900 relative">
-      <div className="container-custom relative z-10">
+      <div className="relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

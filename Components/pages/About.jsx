@@ -63,7 +63,7 @@ const About = () => {
 
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white pt-20">
+    <div className="min-h-screen bg-slate-900 text-white">
       {/* Hero Section */}
       <section 
         className="min-h-screen flex items-center relative overflow-x-hidden w-full"
@@ -106,7 +106,7 @@ const About = () => {
           }}
         />
         
-        <div className="container-custom relative z-10 overflow-hidden py-35">
+        <div className="relative z-10 overflow-hidden py-35">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -249,7 +249,7 @@ const About = () => {
 
       {/* Our Commitment Section */}
       <section className="py-20 px-6 md:px-12 bg-gray-800 relative overflow-hidden">
-        <div className="container-custom relative z-10">
+        <div className=" relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -340,7 +340,7 @@ const About = () => {
         <div className="absolute top-20 left-20 w-32 h-32 bg-[#00F0FF]/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-40 h-40 bg-[#0099FF]/5 rounded-full blur-3xl"></div>
         
-        <div className="container-custom relative z-10">
+        <div className="relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -488,7 +488,7 @@ const About = () => {
           <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%2300F0FF%22%20fill-opacity%3D%220.1%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
         </div>
 
-        <div className="container-custom relative z-10">
+        <div className="relative z-10">
           {/* Section Header */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}

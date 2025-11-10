@@ -22,7 +22,7 @@ const contactDetails = [
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gray-900 text-white pt-20">
+    <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
       <section 
         className="min-h-screen flex items-center relative overflow-x-hidden w-full"

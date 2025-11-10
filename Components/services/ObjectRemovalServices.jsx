@@ -34,7 +34,7 @@ const ObjectRemovalServices = () => {
         <div className="absolute top-20 left-20 w-32 h-32 bg-[#00F0FF]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-40 h-40 bg-[#0099FF]/10 rounded-full blur-3xl"></div>
         
-        <div className="container-custom relative z-10 py-20">
+        <div className=" relative z-10">
           <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -113,7 +113,7 @@ const ObjectRemovalServices = () => {
 
       {/* Main Content */}
       <section className="py-20 px-6 md:px-12 bg-gray-800 relative overflow-hidden">
-        <div className="container-custom relative z-10">
+        <div className=" relative z-10">
           {/* Main Content */}
           <div className="max-w-6xl mx-auto space-y-16">
           {/* Introduction */}

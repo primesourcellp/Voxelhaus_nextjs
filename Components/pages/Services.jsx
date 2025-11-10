@@ -103,7 +103,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white py-10">
+    <div className="min-h-screen bg-slate-900 text-white">
       {/* Hero Section */}
       <section 
         className="min-h-screen flex items-center relative overflow-x-hidden w-full"
@@ -122,7 +122,7 @@ const Services = () => {
         <div className="absolute top-20 left-20 w-32 h-32 bg-[#00F0FF]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-40 h-40 bg-[#0099FF]/10 rounded-full blur-3xl"></div>
         
-        <div className="container-custom relative z-10 py-20">
+        <div className="relative z-10 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <motion.div
@@ -261,7 +261,7 @@ const Services = () => {
 
       {/* Services Overview */}
       <section className="py-20 px-6 md:px-12 bg-gray-900 relative overflow-hidden">
-        <div className="container-custom relative z-10">
+        <div className="relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -352,7 +352,7 @@ const Services = () => {
 
       {/* Why Choose Us Section */}
       <section className="py-20 px-6 md:px-12 bg-gray-800 relative overflow-hidden">
-        <div className="container-custom relative z-10">
+        <div className="relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -399,7 +399,7 @@ const Services = () => {
 
       {/* CTA Section */}
       <section className="py-20 px-6 md:px-12 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 relative overflow-hidden">
-        <div className="container-custom relative z-10 text-center">
+        <div className="relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

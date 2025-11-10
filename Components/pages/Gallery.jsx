@@ -131,7 +131,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white pt-20">
+    <div className="min-h-screen bg-gray-900 text-white ">
       {/* Hero Section */}
       <section className="relative py-20 px-6 md:px-12 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
