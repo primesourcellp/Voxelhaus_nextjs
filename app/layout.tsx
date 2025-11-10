@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   title: "Voxelhaus Consultancy",
   description:
     "Voxelhaus Consultancy delivers premium real estate visualization through virtual staging, floor plans, photo editing, and marketing design services.",
+  icons: {
+    icon: "/assets/Voxelhaus.png",
+    shortcut: "/assets/Voxelhaus.png",
+    apple: "/assets/Voxelhaus.png",
+  },
 };
 
 export default function RootLayout({
