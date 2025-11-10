@@ -36,7 +36,7 @@ const WhatsAppButton = () => {
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.5, delay: 2, type: "spring", stiffness: 200 }}
-      className="fixed bottom-30 right-6 z-50"
+      className="fixed bottom-10 right-6 z-50"
     >
 
       {/* WhatsApp floating button */}
