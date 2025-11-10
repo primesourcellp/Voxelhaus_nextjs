@@ -153,6 +153,7 @@ const About = () => {
                   </motion.h1>
                 </div>
                 
+                
                 <div className="space-y-6">
                   <motion.p 
                     initial={{ opacity: 0, y: 20 }}
