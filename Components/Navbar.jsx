@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Home, Users, Briefcase, Images, Phone, Search } from 'lucide-react';
+import { Menu, X, Home, Users, Briefcase, Images, Phone } from 'lucide-react';
 const logoImage = '/assets/Voxelhaus.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -15,6 +15,7 @@ const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
+  
 
   useEffect(() => {
     // Initialize AOS
@@ -241,14 +242,6 @@ const Navbar = () => {
                     </motion.div>
                   );
                 })}
-
-                <button
-                  type="button"
-                  className="relative flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/80 transition-all duration-300 hover:border-[#00F0FF]/40 hover:text-white hover:shadow-lg hover:shadow-[#00F0FF]/30"
-                  aria-label="Search"
-                >
-                  <Search size={18} />
-                </button>
               </div>
             </div>
           </div>

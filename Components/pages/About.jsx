@@ -105,7 +105,6 @@ const About = () => {
             ease: "easeInOut"
           }}
         />
-        
         <div className="relative z-10 overflow-hidden py-35">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
