@@ -111,13 +111,11 @@ const About = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={{ 
                 opacity: 1, 
-                x: 0,
-                y: [0, -5, 0]
+                x: 0
               }}
               transition={{ 
                 opacity: { duration: 0.8 },
-                x: { duration: 0.8 },
-                y: { duration: 6, repeat: Infinity, ease: "easeInOut" }
+                x: { duration: 0.8 }
               }}
               className="space-y-8 px-4 lg:px-8"
             >
