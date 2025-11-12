@@ -21,9 +21,7 @@ export const metadata: Metadata = {
   description:
     "Voxelhaus Consultancy delivers premium real estate visualization through virtual staging, floor plans, photo editing, and marketing design services.",
   icons: {
-    icon: "/assets/Voxelhaus.png",
-    shortcut: "/assets/Voxelhaus.png",
-    apple: "/assets/Voxelhaus.png",
+    icon: "/public/OG logo.png",
   },
 };
 
@@ -35,6 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} bg-slate-900 text-white antialiased`}
       >
         <div className="min-h-screen flex flex-col">
