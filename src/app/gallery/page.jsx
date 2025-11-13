@@ -3,43 +3,50 @@ import Gallery from "@/Components/pages/Gallery";
 export const metadata = {
   title: "Voxelhaus Gallery | Real Estate Visualization Portfolio",
   description:
-    "Experience Voxelhaus Consultancy’s portfolio featuring virtual staging, 3D floor plans, and photo enhancements that elevate property marketing.",
+    "Explore the Voxelhaus gallery showcasing our best architectural renders, virtual staging, and visualization work for residential and commercial projects.",
   keywords: [
-    "Voxelhaus",
-    "virtual staging gallery",
-    "real estate visuals",
-    "3D floor plans",
-    "photo editing portfolio",
+    "home plans",
+    "house plan drawing online",
+    "home layout design free",
+    "free house plans and designs",
+    "home floor plan designer",
+    "house plan drawing online free",
+    "3d view of house plans",
+
+
   ],
   openGraph: {
-    title: "Voxelhaus Gallery",
+    title: "Voxelhaus Portfolio – Architectural & Real Estate Visuals",
     description:
-      "Browse premium real estate imagery crafted by Voxelhaus Consultancy.",
-    url: "/gallery",
+      "Browse our gallery of 3D renders, floor plans, and virtual staging projects that showcase the quality and precision of Voxelhaus Consultancy design expertise. See how we transform architectural ideas into realistic visuals that inspire and sell properties",
+    url: "https://www.voxelhausconsultancy.com/gallery",
     siteName: "Voxelhaus Consultancy",
     images: [
       {
-        url: "/assets/gallery.webp",
+        url: "OG logo.png",
         width: 1200,
         height: 630,
-        alt: "Voxelhaus Consultancy gallery preview",
+        alt: "Voxelhaus Portfolio – Architectural & Real Estate Visuals",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Voxelhaus Gallery",
+    title: "Voxelhaus Portfolio – Architectural & Real Estate Visuals",
     description:
-      "See how Voxelhaus transforms properties with immersive visuals.",
-    images: ["/assets/gallery.webp"],
+      "Browse our gallery of 3D renders, floor plans, and virtual staging projects that showcase the quality and precision of Voxelhaus Consultancy design expertise. See how we transform architectural ideas into realistic visuals that inspire and sell properties",
+    images: ["OG logo.png"],
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "/gallery",
+    canonical: "https://www.voxelhausconsultancy.com/gallery",
+    languages: {
+      'en-IN': "https://www.voxelhausconsultancy.com/gallery",
+    },
   },
 };
 
