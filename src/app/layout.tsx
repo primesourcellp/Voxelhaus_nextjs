@@ -22,7 +22,12 @@ export const metadata: Metadata = {
   description:
     "Voxelhaus Consultancy delivers premium real estate visualization through virtual staging, floor plans, photo editing, and marketing design services.",
   icons: {
-    icon: "/public/OG logo.png",
+    icon: [
+      { url: "/OG logo.png", sizes: "any" },
+      { url: "/OG logo.png", type: "image/png" },
+    ],
+    apple: "/OG logo.png",
+    shortcut: "/OG logo.png",
   },
 };
 
