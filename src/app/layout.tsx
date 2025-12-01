@@ -49,9 +49,11 @@ export default function RootLayout({
             name="msvalidate.01"
             content="5306464E4DE57EA0791A5B0F381FAEF7"
           />
+           </head>
+
           {/* Google Analytics (gtag.js) */}
           <Script
-            src="https://www.googletagmanager.com/gtag/js?id=G-30RNG4HJDB"
+            src="https://www.googletagmanager.com/gtag/js?id=G-ZN6LQQFQ1P"
             strategy="afterInteractive"
           />
           <Script
@@ -60,7 +62,7 @@ export default function RootLayout({
           >{`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-30RNG4HJDB');`}</Script>
+gtag('config', 'G-ZN6LQQFQ1P');`}</Script>
           {/* Microsoft Clarity Verification */}
           <Script
             id="microsoft-clarity"
@@ -70,10 +72,10 @@ gtag('config', 'G-30RNG4HJDB');`}</Script>
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "u5cnulx5kt");`,
+    })(window, document, "clarity", "script", "uepjw4zupr");`,
             }}
           />
-        </head>
+       
       <body
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} bg-slate-900 text-white antialiased`}
