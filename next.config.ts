@@ -1,11 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  
+  output: "export",        
   trailingSlash: true,
 
   images: {
-    unoptimized: false, 
+    unoptimized: true,     
     remotePatterns: [
       { protocol: "https", hostname: "i0.wp.com" },
       { protocol: "https", hostname: "voxelhausconsultancy.com" },
