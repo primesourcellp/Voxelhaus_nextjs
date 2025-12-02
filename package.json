@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "baseline-browser-mapping": "^2.8.32",
     "dom": "^0.0.3",
     "framer-motion": "^12.23.16",
     "lucide-react": "^0.544.0",
