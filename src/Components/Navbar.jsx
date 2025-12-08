@@ -13,7 +13,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const pathname = usePathname();
+  const pathname = usePathname() || '';
   const router = useRouter();
   
 

@@ -5,15 +5,14 @@ export const metadata = {
   description:
     "Explore the Voxelhaus gallery showcasing our best architectural renders, virtual staging, and visualization work for residential and commercial projects.",
   keywords: [
-    "home plans",
-    "house plan drawing online",
-    "home layout design free",
-    "free house plans and designs",
-    "home floor plan designer",
-    "house plan drawing online free",
-    "3d view of house plans",
-
-
+    "Farmhouse House Plans",
+    "Ranch Style House Plans",
+    "Custom Home Plans",
+    "Cottage House Plans",
+    "4 Bedroom House Plans",
+    "Custom House Plans",
+    "Floorplan Creator",
+    "Building Layout Maker",
   ],
   openGraph: {
     title: "Voxelhaus Portfolio – Architectural & Real Estate Visuals",

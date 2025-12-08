@@ -6,15 +6,15 @@ export const metadata = {
   description:
     "Voxelhaus transforms ideas into immersive 3D designs. We craft architectural renders, virtual staging, and floor plans that elevate property marketing and design.",
   keywords: [
-    'build design',
-    'real estate company',
-    'real estate agency',
-    'realtor companies',
-    'the real estate company',
-    'sustainable design architect',
-    'architect consulting',
-    '3d visualization',
-    
+    'Build Design',
+    'Real Estate Company',
+    'Real Estate Agency',
+    'Realtor Companies',
+    'The Real Estate Company',
+    'Sustainable Design Architect',
+    'Architect Consulting',
+    'Consultant Architect',
+    'Home layout design',
   ],
   openGraph: {
     title: "Voxelhaus – 3D Visualization & Architecture Experts",

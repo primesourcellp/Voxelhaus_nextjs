@@ -4,17 +4,15 @@ export const metadata = {
   title: 'Contact Voxelhaus Consultancy | Start Your Project Today!', 
   description: 'Connect with Voxelhaus Consultancy for 3D rendering, architectural design, or real estate visualization services. Let’s bring your vision to life.', 
   keywords: [
-    'interior design companies near me',
-    'interior design near me',
-    'office interior',
-    'architecture consulting',
-    'home interior ideas',
-    'interior wall design ideas',
-    'interior design ideas for small spaces',
-    'interior design ideas for living room',
-    
-
-   
+    'Home Interior Ideas',
+    'Interior Wall Design Ideas',
+    'AI Remove Objects from Photo',
+    'Background Object Remover',
+    'Image Enhancement',
+    'Photo Retouching for Real Estate',
+    'Property Photo Improvement',
+    'Photo Color Correction',
+    '3 bedroom house plans',
   ],
   openGraph: {
     title: 'Contact Voxelhaus – Architecture & Visualization Experts', 
@@ -42,9 +40,9 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://www.voxelhausconsultancy.com/contact', 
+    canonical: 'https://www.voxelhausconsultancy.com/contact/', 
     languages: {
-      'en-IN': 'https://www.voxelhausconsultancy.com/contact',
+      'en-IN': 'https://www.voxelhausconsultancy.com/contact/',
     },
   },
 };

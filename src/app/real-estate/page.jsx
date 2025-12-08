@@ -4,13 +4,15 @@ export const metadata = {
   title: 'Real Estate Visualization Services | Voxelhaus Consultancy', 
   description: 'Elevate your real estate listings with professional 3D visualization, photo editing, and virtual staging services from Voxelhaus Consultancy.', 
   keywords: [
-    'realtor companies',
-    'real estate company',
-    'real estate services',
-    'real estate marketing agency',
-    'digital marketing for real estate agents',
-    'real estate marketing strategies',
-   
+    'Color Enhancement Service',
+    'Image Tone Correction',
+    'Professional Photo Correction',
+    'Real Estate Photo Editing',
+    'Sky Replacement Service',
+    'Real Estate Sky Editing',
+    'Outdoor Photo Correction',
+    'Property Photo Enhancement',
+    'Floor plan builder free',
   ],
   openGraph: {
     title: 'Real Estate Visualization Experts – Voxelhaus Consultancy', 

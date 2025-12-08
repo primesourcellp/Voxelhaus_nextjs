@@ -4,20 +4,19 @@ export const metadata = {
   title: 'Virtual Staging Services | Real Estate Visualization by Voxelhaus', 
   description: 'Digitally design and furnish spaces with professional virtual staging from Voxelhaus to make every property listing stand out.', 
   keywords: [
-    'room decorations',
-    'new home decor',
-    'bedroom decoration',
-    'living room interior design',
-    'small room decor',
-    'wall decor ideas',
-    'main door decoration ideas',
-
-   
+    'Modern House Plans',
+    'Blueprint Maker',
+    'Floorplan Maker',
+    'House Layout Maker',
+    'House Floor Plan Designer',
+    'Ranch House Plans',
+    'House Plans with Basement',
+    'House Plans for Sale',
   ],
   openGraph: {
     title: 'Realistic Virtual Staging for Real Estate Photos | Voxelhaus', 
     description: 'Voxelhaus provides lifelike virtual staging services that transform empty properties into beautifully designed interiors. Our digital furnishing and decor techniques create realistic spaces that help realtors attract buyers, increase engagement, and sell faster.', 
-    url: 'https://www.voxelhausconsultancy.com/virtual-staging',
+    url: 'https://www.voxelhausconsultancy.com/virtual-staging/',
     siteName: 'Voxelhaus consultancy',
     images: [
       {
@@ -40,9 +39,9 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://www.voxelhausconsultancy.com/virtual-staging', 
+    canonical: 'https://www.voxelhausconsultancy.com/virtual-staging/', 
     languages: {
-      'en-IN': 'https://www.voxelhausconsultancy.com/virtual-staging',
+      'en-IN': 'https://www.voxelhausconsultancy.com/virtual-staging/',
     },
   },
 };

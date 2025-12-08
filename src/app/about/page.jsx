@@ -4,13 +4,15 @@ export const metadata = {
   title: 'About Voxelhaus Consultancy | Creative Architecture Experts', 
   description: 'Learn about Voxelhaus Consultancy, a trusted architectural visualization and design company focused on creativity, innovation, and quality results.', 
   keywords: [
-    'consultant architect',
-    'home construction plans',
-    'home building plans',
-    'architecture design house plans 3d',
-    ', best interior design',
-    'interior designers',
-    
+    'Home Construction Plans',
+    'Home Building Plans',
+    'Architecture Design House Plans 3D',
+    'Best Interior Design',
+    'Interior Designers',
+    'Real Estate Services',
+    'Real Estate Marketing Agency',
+    'Real Estate Marketing Strategies',
+    'Barndominium home plans',
   ],
   openGraph: {
     title: 'About Voxelhaus – Innovative Architectural Design Team', 

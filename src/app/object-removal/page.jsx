@@ -4,12 +4,15 @@ export const metadata = {
   title: 'Object Removal for Real Estate Photos | Voxelhaus', 
   description: 'Remove unwanted objects from property photos with Voxelhaus. Clean, distraction-free images enhance every real estate listing.', 
   keywords: [
-    'ai remove objects from photo',
-    'background object remover',
-    'image enhancement',
-    'photo retouching for real estate',
-    'property photo improvement',
-   
+    'Real Estate Image Retouching',
+    'House Planner Online Free',
+    '2D Plan to 3D Converter',
+    '2D to 3D Floor Plan Converter',
+    '3D Floor Plan Designer',
+    '3D Floor Plan Maker',
+    '3D Design Home Plan',
+    '3D Layout Design',
+    'Small cottage house plans',
   ],
   openGraph: {
     title: 'Voxelhaus Object Removal | Perfect Every Property Image', 

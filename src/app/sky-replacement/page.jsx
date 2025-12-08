@@ -4,19 +4,20 @@ export const metadata = {
   title: 'Sky Replacement for Real Estate Photos | Voxelhaus', 
   description: 'Replace dull skies with bright, realistic ones. Voxelhaus offers sky replacement to enhance outdoor real estate photos instantly.', 
   keywords: [
-    'sky replacement service',
-    'real estate sky editing',
-    'outdoor photo correction',
-    'property photo enhancement',
-    'real estate image retouching',
-    'house planner online free',
-    '',
-   
+    'Wall Decor Ideas',
+    'Main Door Decoration Ideas',
+    'Home Plans',
+    'House Plan Drawing Online',
+    'Home Layout Design Free',
+    'Free House Plans and Designs',
+    'Home Floor Plan Designer',
+    '3D View of House Plans',
+    'Floorplan generator',
   ],
   openGraph: {
     title: 'Voxelhaus Sky Replacement | Make Every Property Picture Perfect', 
     description: 'Transform overcast property photos into stunning daylight shots with Voxelhaus sky replacement services. Our experts replace dull skies with natural, bright, and realistic tones that elevate your property visuals and boost real estate appeal.', 
-    url: 'https://www.voxelhausconsultancy.com/sky-replacement',
+    url: 'https://www.voxelhausconsultancy.com/sky-replacement/',
     siteName: 'Voxelhaus consultancy',
     images: [
       {
@@ -39,9 +40,9 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://www.voxelhausconsultancy.com/sky-replacement', 
+    canonical: 'https://www.voxelhausconsultancy.com/sky-replacement/', 
     languages: {
-      'en-IN': 'https://www.voxelhausconsultancy.com/sky-replacement',
+      'en-IN': 'https://www.voxelhausconsultancy.com/sky-replacement/',
     },
   },
 };

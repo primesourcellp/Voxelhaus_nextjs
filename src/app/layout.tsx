@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+ 
   title: "Voxelhaus Consultancy",
   description:
     "Voxelhaus Consultancy delivers premium real estate visualization through virtual staging, floor plans, photo editing, and marketing design services.",
