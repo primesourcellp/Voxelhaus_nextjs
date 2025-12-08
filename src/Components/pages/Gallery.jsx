@@ -15,6 +15,9 @@ const image4 = '/assets/Image4.jpg';
 const galleryWebp = '/assets/gallery.webp';
 const gallery2 = '/assets/gallery2.jpg';
 const gallery3 = '/assets/gallery3.jpg';
+const photoEditing = '/assets/photoedit.jpg';
+const beforeImage = '/assets/before.jpg';
+const afterImage = '/assets/after.jpg';
 
 const Link = ({ to, href, ...props }) => {
   const targetHref = href ?? to ?? '#';
@@ -107,6 +110,16 @@ const Gallery = () => {
       category: "virtual-staging",
       description: "Digitally furnished living space creating an inviting atmosphere for potential buyers.",
       service: "Visual Staging Services"
+    },
+    {
+      id: 11,
+      image: photoEditing,
+      beforeImage: beforeImage,
+      afterImage: afterImage,
+      title: "Photo Editing - Enhanced Property Image",
+      category: "photo-editing",
+      description: "Professional photo editing and enhancement services to make your property listings stand out.",
+      service: "Photo Editing Services"
     }
   ];
 
@@ -406,52 +419,124 @@ const Gallery = () => {
                     transition: { duration: 0.3 }
                   }}
                   className={`group cursor-pointer ${
-                    viewMode === 'list' ? 'flex items-center space-x-6' : ''
+                    viewMode === 'list' ? 'flex items-center space-x-6' : 
+                    viewMode === 'grid' && item.id === 11 ? 'w-full mb-4 md:mb-0 md:col-span-2 lg:col-span-3 xl:col-span-4' : ''
                   }`}
                   onClick={() => openModal(item)}
                 >
-                  <motion.div 
-                    className={`relative overflow-hidden rounded-2xl ${
-                      viewMode === 'list' ? 'w-48 h-32 flex-shrink-0' : 'aspect-square'
-                    }`}
-                    whileHover={{ 
-                      boxShadow: "0 20px 40px rgba(0,240,255,0.3)"
-                    }}
-                  >
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <motion.div 
-                      className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
-                      initial={{ opacity: 0 }}
-                      whileHover={{ opacity: 1 }}
-                    >
-                      <motion.div
-                        initial={{ scale: 0 }}
-                        whileHover={{ scale: 1 }}
-                        transition={{ duration: 0.3 }}
-                        className="w-16 h-16 bg-[#00F0FF]/20 backdrop-blur-sm rounded-full flex items-center justify-center"
+                  {item.id === 11 && viewMode === 'grid' ? (
+                    <>
+                      {/* Mobile: Before/After Side by Side */}
+                      <div className="md:hidden w-full">
+                        <div className="flex gap-2 mb-2">
+                          <div className="relative overflow-hidden rounded-2xl w-1/2 h-[280px] sm:h-[320px]">
+                            <img
+                              src={item.beforeImage}
+                              alt="Before"
+                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            />
+                            <div className="absolute top-2 left-2 px-2 py-1 bg-black/60 backdrop-blur-sm rounded text-white text-xs font-semibold">
+                              Before
+                            </div>
+                          </div>
+                          <div className="relative overflow-hidden rounded-2xl w-1/2 h-[280px] sm:h-[320px]">
+                            <img
+                              src={item.afterImage}
+                              alt="After"
+                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            />
+                            <div className="absolute top-2 right-2 px-2 py-1 bg-[#00F0FF]/80 backdrop-blur-sm rounded text-black text-xs font-semibold">
+                              After
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {/* Desktop: Single Wide Image */}
+                      <motion.div 
+                        className="hidden md:block relative overflow-hidden rounded-2xl w-full aspect-[2/1] lg:aspect-[3/1]"
+                        whileHover={{ 
+                          boxShadow: "0 20px 40px rgba(0,240,255,0.3)"
+                        }}
                       >
-                        <Eye size={32} className="text-white" />
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                        <motion.div 
+                          className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+                          initial={{ opacity: 0 }}
+                          whileHover={{ opacity: 1 }}
+                        >
+                          <motion.div
+                            initial={{ scale: 0 }}
+                            whileHover={{ scale: 1 }}
+                            transition={{ duration: 0.3 }}
+                            className="w-16 h-16 bg-[#00F0FF]/20 backdrop-blur-sm rounded-full flex items-center justify-center"
+                          >
+                            <Eye size={32} className="text-white" />
+                          </motion.div>
+                        </motion.div>
+                        
+                        {/* Floating Elements */}
+                        <motion.div
+                          className="absolute top-4 right-4 w-3 h-3 bg-[#00F0FF] rounded-full opacity-0 group-hover:opacity-100"
+                          animate={{ 
+                            scale: [1, 1.2, 1],
+                            opacity: [0, 0.8, 0]
+                          }}
+                          transition={{ 
+                            duration: 2,
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                          }}
+                        />
                       </motion.div>
+                    </>
+                  ) : (
+                    <motion.div 
+                      className={`relative overflow-hidden rounded-2xl ${
+                        viewMode === 'list' ? 'w-48 h-32 flex-shrink-0' : 'aspect-square'
+                      }`}
+                      whileHover={{ 
+                        boxShadow: "0 20px 40px rgba(0,240,255,0.3)"
+                      }}
+                    >
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <motion.div 
+                        className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+                        initial={{ opacity: 0 }}
+                        whileHover={{ opacity: 1 }}
+                      >
+                        <motion.div
+                          initial={{ scale: 0 }}
+                          whileHover={{ scale: 1 }}
+                          transition={{ duration: 0.3 }}
+                          className="w-16 h-16 bg-[#00F0FF]/20 backdrop-blur-sm rounded-full flex items-center justify-center"
+                        >
+                          <Eye size={32} className="text-white" />
+                        </motion.div>
+                      </motion.div>
+                      
+                      {/* Floating Elements */}
+                      <motion.div
+                        className="absolute top-4 right-4 w-3 h-3 bg-[#00F0FF] rounded-full opacity-0 group-hover:opacity-100"
+                        animate={{ 
+                          scale: [1, 1.2, 1],
+                          opacity: [0, 0.8, 0]
+                        }}
+                        transition={{ 
+                          duration: 2,
+                          repeat: Infinity,
+                          ease: "easeInOut"
+                        }}
+                      />
                     </motion.div>
-                    
-                    {/* Floating Elements */}
-                    <motion.div
-                      className="absolute top-4 right-4 w-3 h-3 bg-[#00F0FF] rounded-full opacity-0 group-hover:opacity-100"
-                      animate={{ 
-                        scale: [1, 1.2, 1],
-                        opacity: [0, 0.8, 0]
-                      }}
-                      transition={{ 
-                        duration: 2,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                      }}
-                    />
-                  </motion.div>
+                  )}
                   
                   <motion.div 
                     className={`${viewMode === 'list' ? 'flex-1' : 'mt-4'}`}
