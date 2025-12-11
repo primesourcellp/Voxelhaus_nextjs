@@ -24,7 +24,7 @@ export const metadata = {
         url: 'OG logo.png', 
         width: 1200,
         height: 630,
-        alt: '', 
+        alt: 'Voxelhaus Consultancy | Modern 3D Design & Visual Solutions', 
       },
     ],
     type: 'website',

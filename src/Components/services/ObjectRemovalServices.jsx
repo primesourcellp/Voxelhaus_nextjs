@@ -124,9 +124,87 @@ const ObjectRemovalServices = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <p className="text-lg text-gray-300 leading-relaxed mb-8">
-              In real estate, visuals are everything. A cluttered room, distracting wires, personal belongings, or unnecessary objects in a property photo can take the focus away from the actual space. That's where Voxelhaus consultancy Real Estate Object Removal services come in.
-            </p>
+            <div className="space-y-8 mb-8">
+              <p className="text-lg text-gray-300 leading-relaxed">
+                In real estate, visuals are everything. A cluttered room, distracting wires, personal belongings, or unnecessary objects in a property photo can take the focus away from the actual space. That's where Voxelhaus Consultancy Real Estate Object Removal services come in.
+              </p>
+              
+              {/* Info Box Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="bg-gradient-to-br from-[#00F0FF]/10 via-gray-800/40 to-gray-800/40 backdrop-blur-xl border border-[#00F0FF]/30 rounded-2xl p-6 hover:border-[#00F0FF]/50 transition-all duration-300"
+                >
+                  <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+                    <span className="w-2 h-2 bg-[#00F0FF] rounded-full mr-3 animate-pulse"></span>
+                    What is Real Estate Object Removal?
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    Real estate object removal is a professional photo editing service that eliminates unwanted elements from property images. This includes removing furniture, personal items, wires, fixtures, and other distractions that can make a space appear smaller, cluttered, or less appealing to potential buyers.
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true }}
+                  className="bg-gradient-to-br from-[#0099FF]/10 via-gray-800/40 to-gray-800/40 backdrop-blur-xl border border-[#0099FF]/30 rounded-2xl p-6 hover:border-[#0099FF]/50 transition-all duration-300"
+                >
+                  <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+                    <span className="w-2 h-2 bg-[#0099FF] rounded-full mr-3"></span>
+                    Advanced Editing Techniques
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    Our expert editors use advanced techniques including color matching, shadow reconstruction, and texture blending to ensure the final image looks natural and seamless, as if the objects were never there in the first place.
+                  </p>
+                </motion.div>
+              </div>
+
+              <h2 className="text-2xl font-bold text-white mt-8 mb-4">Why Professional Object Removal Matters</h2>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Professional object removal goes beyond simple photo editing. It requires understanding lighting, shadows, textures, and spatial relationships to create realistic results. At Voxelhaus Consultancy, we ensure every edited photo maintains the property's authentic appearance while highlighting its best features.
+              </p>
+
+              {/* Key Points Box */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-r from-[#00F0FF]/10 via-gray-800/40 to-[#0099FF]/10 backdrop-blur-xl border border-[#00F0FF]/30 rounded-2xl p-6 md:p-8 mt-6 hover:border-[#00F0FF]/50 transition-all duration-300"
+              >
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+                  <span className="w-2 h-2 bg-[#00F0FF] rounded-full mr-3 animate-pulse"></span>
+                  Key Benefits for Your Property Listings
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-[#00F0FF] mt-1">✓</span>
+                    <p className="text-gray-300">Helps properties stand out in competitive real estate markets</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-[#00F0FF] mt-1">✓</span>
+                    <p className="text-gray-300">Attracts more qualified buyers with cleaner visuals</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-[#00F0FF] mt-1">✓</span>
+                    <p className="text-gray-300">Perfect for occupied properties or staging improvements</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-[#00F0FF] mt-1">✓</span>
+                    <p className="text-gray-300">Helps buyers visualize themselves in the space</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              <p className="text-lg text-gray-300 leading-relaxed mt-6">
+                Our services are particularly valuable for properties that are currently occupied, need staging improvements, or have minor visual imperfections that can be easily corrected through professional editing. By removing distractions, we help buyers visualize themselves in the space, which is essential for successful property sales.
+              </p>
+            </div>
           </motion.div>
 
           {/* Why Essential */}
@@ -135,12 +213,13 @@ const ObjectRemovalServices = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-gray-800/30 via-gray-800/20 to-gray-800/30 backdrop-blur-xl border border-gray-700/50 rounded-3xl p-8 md:p-12"
+            className="bg-gradient-to-r from-[#00F0FF]/10 via-gray-800/40 to-[#0099FF]/10 backdrop-blur-xl border border-[#00F0FF]/30 rounded-2xl p-8 md:p-10 hover:border-[#00F0FF]/50 transition-all duration-300"
           >
-            <h3 className="text-3xl font-bold text-white mb-6 text-center">
+            <h3 className="text-3xl font-bold text-white mb-6 flex items-center justify-center">
+              <span className="w-2 h-2 bg-[#00F0FF] rounded-full mr-3 animate-pulse"></span>
               Why Real Estate Object Removal is Essential
             </h3>
-            <p className="text-lg text-gray-300 leading-relaxed text-center">
+            <p className="text-lg text-gray-300 leading-relaxed">
               Property buyers are often distracted by items in photos that don't belong. A beautiful living room can look smaller with clutter, and a modern kitchen can lose its charm if appliances, bins, or wires are visible. By removing these distractions, buyers can focus on the layout, design, and features of the home rather than its imperfections.
             </p>
           </motion.div>
@@ -152,12 +231,21 @@ const ObjectRemovalServices = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-bold text-white mb-8 text-center">
-              Our Real Estate Object Removal Services
-            </h3>
-            <p className="text-lg text-gray-300 leading-relaxed mb-12 text-center">
-              We offer a wide range of object removal solutions designed to enhance property images and make them more appealing to potential buyers. Our services go beyond simple edits — we ensure every photo looks natural, seamless, and professional.
-            </p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-[#00F0FF]/10 via-gray-800/40 to-gray-800/40 backdrop-blur-xl border border-[#00F0FF]/30 rounded-2xl p-6 md:p-8 mb-8 hover:border-[#00F0FF]/50 transition-all duration-300 text-center"
+            >
+              <h3 className="text-3xl font-bold text-white mb-4 flex items-center justify-center">
+                <span className="w-2 h-2 bg-[#00F0FF] rounded-full mr-3 animate-pulse"></span>
+                Our Real Estate Object Removal Services
+              </h3>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                We offer a wide range of object removal solutions designed to enhance property images and make them more appealing to potential buyers. Our services go beyond simple edits — we ensure every photo looks natural, seamless, and professional.
+              </p>
+            </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[

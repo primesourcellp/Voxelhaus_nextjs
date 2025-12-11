@@ -123,9 +123,87 @@ const SkyReplacementServices = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <p className="text-lg text-gray-300 leading-relaxed mb-8">
-              When it comes to real estate photography, the sky can make or break a property's first impression. A cloudy, gray, or overexposed sky can make even the most stunning home appear unappealing. With Voxelhaus consultancy professional Sky Replacement services, we transform ordinary property photos into visually captivating images by replacing dull skies with vibrant, natural, and realistic ones.
-            </p>
+            <div className="space-y-8 mb-8">
+              <p className="text-lg text-gray-300 leading-relaxed">
+                When it comes to real estate photography, the sky can make or break a property's first impression. A cloudy, gray, or overexposed sky can make even the most stunning home appear unappealing. With Voxelhaus Consultancy professional Sky Replacement services, we transform ordinary property photos into visually captivating images by replacing dull skies with vibrant, natural, and realistic ones.
+              </p>
+              
+              {/* Info Box Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="bg-gradient-to-br from-[#00F0FF]/10 via-gray-800/40 to-gray-800/40 backdrop-blur-xl border border-[#00F0FF]/30 rounded-2xl p-6 hover:border-[#00F0FF]/50 transition-all duration-300"
+                >
+                  <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+                    <span className="w-2 h-2 bg-[#00F0FF] rounded-full mr-3 animate-pulse"></span>
+                    Understanding Sky Replacement Services
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    Sky replacement is a specialized photo editing technique that replaces overcast, dull, or poorly exposed skies with more appealing alternatives. This service is particularly valuable for real estate photography, where exterior shots play a crucial role in attracting potential buyers.
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true }}
+                  className="bg-gradient-to-br from-[#0099FF]/10 via-gray-800/40 to-gray-800/40 backdrop-blur-xl border border-[#0099FF]/30 rounded-2xl p-6 hover:border-[#0099FF]/50 transition-all duration-300"
+                >
+                  <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+                    <span className="w-2 h-2 bg-[#0099FF] rounded-full mr-3"></span>
+                    Professional Techniques
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    Professional sky replacement involves careful color matching, shadow adjustment, and seamless blending to ensure the new sky looks completely natural and enhances the overall property image. Our editors use industry-leading software for flawless results.
+                  </p>
+                </motion.div>
+              </div>
+
+              <h2 className="text-2xl font-bold text-white mt-8 mb-4">The Impact of Professional Sky Replacement</h2>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                A well-executed sky replacement can dramatically improve the visual appeal of property photos. Bright, clear skies create positive associations and make properties feel more inviting. This visual enhancement not only increases online listing engagement but also helps properties sell faster.
+              </p>
+
+              {/* Key Points Box */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-r from-[#00F0FF]/10 via-gray-800/40 to-[#0099FF]/10 backdrop-blur-xl border border-[#00F0FF]/30 rounded-2xl p-6 md:p-8 mt-6 hover:border-[#00F0FF]/50 transition-all duration-300"
+              >
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+                  <span className="w-2 h-2 bg-[#00F0FF] rounded-full mr-3 animate-pulse"></span>
+                  When You Need Sky Replacement Services
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-[#00F0FF] mt-1">✓</span>
+                    <p className="text-gray-300">Properties photographed during unfavorable weather conditions</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-[#00F0FF] mt-1">✓</span>
+                    <p className="text-gray-300">When natural lighting wasn't ideal during photography</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-[#00F0FF] mt-1">✓</span>
+                    <p className="text-gray-300">Need consistent, professional images across all listings</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-[#00F0FF] mt-1">✓</span>
+                    <p className="text-gray-300">Want to match property style with seasonal variations</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              <p className="text-lg text-gray-300 leading-relaxed mt-6">
+                At Voxelhaus Consultancy, we use industry-leading editing software and techniques to deliver sky replacements that are indistinguishable from natural photography. We offer various sky options including clear blue skies, sunset scenes, and seasonal variations to match your property's style and target market.
+              </p>
+            </div>
           </motion.div>
 
           {/* Why Important */}
