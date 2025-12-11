@@ -1,7 +1,7 @@
 import ObjectRemovalPage from "@/Components/pages/ObjectRemovalPage";
 
 export const metadata = {
-  title: 'Object Removal for Real Estate Photos | Voxelhaus', 
+  title: 'Object Removal Services for Real Estate Photos | Voxelhaus Consultancy', 
   description: 'Remove unwanted objects from property photos with Voxelhaus. Clean, distraction-free images enhance every real estate listing.', 
   keywords: [
     'Real Estate Image Retouching',

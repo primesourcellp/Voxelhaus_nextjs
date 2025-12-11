@@ -1,7 +1,7 @@
 import ColorCastRemovalPage from "@/Components/pages/ColorCastRemovalPage";
 
 export const metadata = {
-  title: 'Color Cast Removal Services | Real Estate Photo Editing', 
+  title: 'Color Cast Removal Services | Real Estate Photo Editing – Voxelhaus', 
   description: 'Correct lighting and enhance colors in your property photos with expert color cast removal services from Voxelhaus Consultancy.',
   keywords: [
     '3D Drawing Plan',

@@ -1,7 +1,7 @@
 import SkyReplacementPage from "@/Components/pages/SkyReplacementPage";
 
 export const metadata = {
-  title: 'Sky Replacement for Real Estate Photos | Voxelhaus', 
+  title: 'Sky Replacement Services for Real Estate Photos | Voxelhaus Consultancy', 
   description: 'Replace dull skies with bright, realistic ones. Voxelhaus offers sky replacement to enhance outdoor real estate photos instantly.', 
   keywords: [
     'Wall Decor Ideas',

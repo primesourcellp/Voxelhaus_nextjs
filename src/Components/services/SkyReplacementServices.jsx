@@ -163,10 +163,21 @@ const SkyReplacementServices = () => {
                 </motion.div>
               </div>
 
-              <h2 className="text-2xl font-bold text-white mt-8 mb-4">The Impact of Professional Sky Replacement</h2>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                A well-executed sky replacement can dramatically improve the visual appeal of property photos. Bright, clear skies create positive associations and make properties feel more inviting. This visual enhancement not only increases online listing engagement but also helps properties sell faster.
-              </p>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-br from-[#0099FF]/10 via-gray-800/40 to-gray-800/40 backdrop-blur-xl border border-[#0099FF]/30 rounded-2xl p-6 md:p-8 mt-8 hover:border-[#0099FF]/50 transition-all duration-300"
+              >
+                <h3 className="text-2xl font-bold text-white mb-4 flex items-center justify-center">
+                  <span className="w-2 h-2 bg-[#0099FF] rounded-full mr-3 animate-pulse"></span>
+                  The Impact of Professional Sky Replacement
+                </h3>
+                <p className="text-lg text-gray-300 leading-relaxed">
+                  A well-executed sky replacement can dramatically improve the visual appeal of property photos. Bright, clear skies create positive associations and make properties feel more inviting. This visual enhancement not only increases online listing engagement but also helps properties sell faster.
+                </p>
+              </motion.div>
 
               {/* Key Points Box */}
               <motion.div
@@ -176,7 +187,7 @@ const SkyReplacementServices = () => {
                 viewport={{ once: true }}
                 className="bg-gradient-to-r from-[#00F0FF]/10 via-gray-800/40 to-[#0099FF]/10 backdrop-blur-xl border border-[#00F0FF]/30 rounded-2xl p-6 md:p-8 mt-6 hover:border-[#00F0FF]/50 transition-all duration-300"
               >
-                <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center justify-center">
                   <span className="w-2 h-2 bg-[#00F0FF] rounded-full mr-3 animate-pulse"></span>
                   When You Need Sky Replacement Services
                 </h3>
