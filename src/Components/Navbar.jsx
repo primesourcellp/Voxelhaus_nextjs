@@ -67,11 +67,18 @@ const Navbar = () => {
 
   const scrollToSection = useCallback((path) => {
     setIsOpen(false);
-    router.push(path);
-
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100);
+    // Use router.push only if router is available (client-side)
+    if (router && typeof router.push === 'function') {
+      router.push(path);
+      setTimeout(() => {
+        if (typeof window !== 'undefined') {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }, 100);
+    } else if (typeof window !== 'undefined') {
+      // Fallback to window.location for static export
+      window.location.href = path;
+    }
   }, [router]);
 
   return (
@@ -103,9 +110,10 @@ const Navbar = () => {
               >
                 <Link
                   href="/"
-                  onClick={(event) => {
-                    event.preventDefault();
-                    scrollToSection('/');
+                  onClick={() => {
+                    if (typeof window !== 'undefined') {
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
                   }}
                   className="flex items-center"
                 >
@@ -144,9 +152,13 @@ const Navbar = () => {
                         >
                           <Link
                             href={item.path}
-                            onClick={(event) => {
-                              event.preventDefault();
-                              scrollToSection(item.path);
+                            onClick={() => {
+                              setIsServicesOpen(false);
+                              if (typeof window !== 'undefined') {
+                                setTimeout(() => {
+                                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                                }, 100);
+                              }
                             }}
                             className="relative group px-6 py-3 rounded-lg transition-all duration-300"
                           >
@@ -178,10 +190,13 @@ const Navbar = () => {
                                   <Link
                                     key={service.name}
                                     href={service.path}
-                                    onClick={(event) => {
-                                      event.preventDefault();
+                                    onClick={() => {
                                       setIsServicesOpen(false);
-                                      scrollToSection(service.path);
+                                      if (typeof window !== 'undefined') {
+                                        setTimeout(() => {
+                                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                                        }, 100);
+                                      }
                                     }}
                                     className="block px-6 py-4 text-sm text-white/90 hover:text-white hover:bg-white/10 transition-all duration-200 border-b border-white/10 last:border-b-0"
                                   >
@@ -195,9 +210,12 @@ const Navbar = () => {
                       ) : (
                         <Link
                           href={item.path}
-                          onClick={(event) => {
-                            event.preventDefault();
-                            scrollToSection(item.path);
+                          onClick={() => {
+                            if (typeof window !== 'undefined') {
+                              setTimeout(() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                              }, 100);
+                            }
                           }}
                           className="relative group px-6 py-3 rounded-lg transition-all duration-300"
                         >
@@ -259,9 +277,10 @@ const Navbar = () => {
               >
                 <Link
                   href="/"
-                  onClick={(event) => {
-                    event.preventDefault();
-                    scrollToSection('/');
+                  onClick={() => {
+                    if (typeof window !== 'undefined') {
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
                   }}
                   className="flex items-center"
                 >
@@ -345,10 +364,13 @@ const Navbar = () => {
                           <div className="space-y-2">
                               <Link
                                 href={item.path}
-                                onClick={(event) => {
-                                  event.preventDefault();
+                                onClick={() => {
                                   setIsOpen(false);
-                                  scrollToSection(item.path);
+                                  if (typeof window !== 'undefined') {
+                                    setTimeout(() => {
+                                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                                    }, 100);
+                                  }
                                 }}
                                 className={`relative group flex items-center justify-between p-6 rounded-2xl transition-all duration-300 w-full ${
                                   isActive
@@ -397,10 +419,14 @@ const Navbar = () => {
                                       <Link
                                         key={service.name}
                                         href={service.path}
-                                        onClick={(event) => {
-                                          event.preventDefault();
+                                        onClick={() => {
+                                          setIsOpen(false);
                                           setIsServicesOpen(false);
-                                          scrollToSection(service.path);
+                                          if (typeof window !== 'undefined') {
+                                            setTimeout(() => {
+                                              window.scrollTo({ top: 0, behavior: 'smooth' });
+                                            }, 100);
+                                          }
                                         }}
                                         className="block p-4 text-white/90 hover:text-white hover:bg-white/10 rounded-xl transition-all duration-200"
                                       >
@@ -415,9 +441,13 @@ const Navbar = () => {
                         ) : (
                           <Link
                             href={item.path}
-                            onClick={(event) => {
-                              event.preventDefault();
-                              scrollToSection(item.path);
+                            onClick={() => {
+                              setIsOpen(false);
+                              if (typeof window !== 'undefined') {
+                                setTimeout(() => {
+                                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                                }, 100);
+                              }
                             }}
                             className={`relative group flex items-center justify-between p-6 rounded-2xl transition-all duration-300 w-full ${
                               isActive
