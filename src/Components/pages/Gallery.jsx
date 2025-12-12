@@ -267,86 +267,6 @@ const Gallery = () => {
               Explore our portfolio of professional real estate visualizations, from stunning 3D renderings to enhanced property photos that help sell properties faster.
             </motion.p>
 
-            {/* Additional SEO Content with Boxes */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="max-w-4xl mx-auto mt-12 space-y-8"
-            >
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Welcome to the Voxelhaus Consultancy gallery, where professional real estate visualization meets creative excellence. Our extensive portfolio showcases the transformative power of high-quality visual content in property marketing.
-              </p>
-
-              {/* Info Boxes Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 1 }}
-                  className="bg-gradient-to-br from-[#00F0FF]/10 via-gray-800/40 to-gray-800/40 backdrop-blur-xl border border-[#00F0FF]/30 rounded-2xl p-6 hover:border-[#00F0FF]/50 transition-all duration-300"
-                >
-                  <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                    <span className="w-2 h-2 bg-[#00F0FF] rounded-full mr-3 animate-pulse"></span>
-                    Our Services Showcase
-                  </h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    Each project represents our commitment to excellence. From <strong className="text-white">3D architectural renderings</strong> that bring floor plans to life to <strong className="text-white">virtual staging services</strong> that transform empty spaces into inviting homes.
-                  </p>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 1.2 }}
-                  className="bg-gradient-to-br from-[#0099FF]/10 via-gray-800/40 to-gray-800/40 backdrop-blur-xl border border-[#0099FF]/30 rounded-2xl p-6 hover:border-[#0099FF]/50 transition-all duration-300"
-                >
-                  <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                    <span className="w-2 h-2 bg-[#0099FF] rounded-full mr-3"></span>
-                    Photo Editing Expertise
-                  </h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    Our <strong className="text-white">photo editing expertise</strong> includes object removal, color correction, and sky replacement, ensuring every property image stands out in competitive markets.
-                  </p>
-                </motion.div>
-              </div>
-
-              {/* Highlight Box */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.4 }}
-                className="bg-gradient-to-r from-[#00F0FF]/10 via-gray-800/40 to-[#0099FF]/10 backdrop-blur-xl border border-[#00F0FF]/30 rounded-2xl p-6 md:p-8 mt-6 hover:border-[#00F0FF]/50 transition-all duration-300"
-              >
-                <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                  <span className="w-2 h-2 bg-[#00F0FF] rounded-full mr-3 animate-pulse"></span>
-                  What You'll Find in Our Gallery
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                  <div className="flex items-start space-x-3">
-                    <span className="text-[#00F0FF] mt-1">✓</span>
-                    <p className="text-gray-300">2D and 3D floor plans with detailed layouts</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="text-[#00F0FF] mt-1">✓</span>
-                    <p className="text-gray-300">Interior and exterior 3D visualizations</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="text-[#00F0FF] mt-1">✓</span>
-                    <p className="text-gray-300">Virtual staging transformations</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="text-[#00F0FF] mt-1">✓</span>
-                    <p className="text-gray-300">Professional photo editing examples</p>
-                  </div>
-                </div>
-              </motion.div>
-
-              <p className="text-lg text-gray-300 leading-relaxed mt-6">
-                Browse through our categories to see real examples of how professional visualization services can enhance property listings, increase buyer engagement, and accelerate sales. Each image tells a story of attention to detail, technical skill, and creative vision—the hallmarks of our work.
-              </p>
-            </motion.div>
-
             {/* Floating Icons */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -647,6 +567,164 @@ const Gallery = () => {
               ))}
             </motion.div>
           </AnimatePresence>
+        </div>
+      </section>
+
+      {/* SEO Content Section - Redesigned */}
+      <section className="py-20 px-6 md:px-12 bg-gray-800/50">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-6xl mx-auto"
+          >
+            {/* Main Introduction */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Welcome to{' '}
+                <span className="bg-gradient-to-r from-[#00F0FF] via-[#0099FF] to-[#00F0FF] bg-clip-text text-transparent">
+                  Voxelhaus Consultancy Gallery
+                </span>
+              </h2>
+              <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
+                Where professional real estate visualization meets creative excellence. Our extensive portfolio showcases the transformative power of high-quality visual content in property marketing.
+              </p>
+            </motion.div>
+
+            {/* Services Showcase Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="group relative overflow-hidden bg-gradient-to-br from-[#00F0FF]/10 via-gray-800/50 to-gray-800/50 backdrop-blur-xl border border-[#00F0FF]/30 rounded-3xl p-8 hover:border-[#00F0FF]/60 hover:shadow-[0_0_40px_rgba(0,240,255,0.2)] transition-all duration-500"
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#00F0FF]/10 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-[#00F0FF]/20 transition-all duration-500"></div>
+                <div className="relative z-10">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-[#00F0FF]/20 rounded-xl flex items-center justify-center mr-4 group-hover:bg-[#00F0FF]/30 transition-all duration-300">
+                      <Sparkles className="text-[#00F0FF]" size={24} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white">Our Services Showcase</h3>
+                  </div>
+                  <p className="text-gray-300 leading-relaxed text-lg">
+                    Each project represents our commitment to excellence. From <strong className="text-white">3D architectural renderings</strong> that bring floor plans to life to <strong className="text-white">virtual staging services</strong> that transform empty spaces into inviting homes.
+                  </p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="group relative overflow-hidden bg-gradient-to-br from-[#0099FF]/10 via-gray-800/50 to-gray-800/50 backdrop-blur-xl border border-[#0099FF]/30 rounded-3xl p-8 hover:border-[#0099FF]/60 hover:shadow-[0_0_40px_rgba(0,153,255,0.2)] transition-all duration-500"
+              >
+                <div className="absolute top-0 left-0 w-32 h-32 bg-[#0099FF]/10 rounded-full blur-3xl -ml-16 -mt-16 group-hover:bg-[#0099FF]/20 transition-all duration-500"></div>
+                <div className="relative z-10">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-[#0099FF]/20 rounded-xl flex items-center justify-center mr-4 group-hover:bg-[#0099FF]/30 transition-all duration-300">
+                      <Zap className="text-[#0099FF]" size={24} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white">Photo Editing Expertise</h3>
+                  </div>
+                  <p className="text-gray-300 leading-relaxed text-lg">
+                    Our <strong className="text-white">photo editing expertise</strong> includes object removal, color correction, and sky replacement, ensuring every property image stands out in competitive markets.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* What You'll Find Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="relative overflow-hidden bg-gradient-to-r from-[#00F0FF]/10 via-gray-800/40 to-[#0099FF]/10 backdrop-blur-xl border border-[#00F0FF]/30 rounded-3xl p-8 md:p-12 hover:border-[#00F0FF]/50 transition-all duration-500"
+            >
+              {/* Animated Background Elements */}
+              <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+                <motion.div
+                  className="absolute top-10 left-10 w-20 h-20 bg-[#00F0FF]/10 rounded-full blur-2xl"
+                  animate={{
+                    scale: [1, 1.2, 1],
+                    opacity: [0.3, 0.6, 0.3],
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                <motion.div
+                  className="absolute bottom-10 right-10 w-24 h-24 bg-[#0099FF]/10 rounded-full blur-2xl"
+                  animate={{
+                    scale: [1.2, 1, 1.2],
+                    opacity: [0.4, 0.7, 0.4],
+                  }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 1
+                  }}
+                />
+              </div>
+
+              <div className="relative z-10">
+                <div className="flex items-center mb-8">
+                  <div className="w-3 h-3 bg-[#00F0FF] rounded-full mr-4 animate-pulse"></div>
+                  <h3 className="text-3xl font-bold text-white">What You'll Find in Our Gallery</h3>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {[
+                    "2D and 3D floor plans with detailed layouts",
+                    "Interior and exterior 3D visualizations",
+                    "Virtual staging transformations",
+                    "Professional photo editing examples"
+                  ].map((item, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+                      viewport={{ once: true }}
+                      className="flex items-start space-x-4 group"
+                    >
+                      <div className="flex-shrink-0 w-8 h-8 bg-[#00F0FF]/20 rounded-lg flex items-center justify-center group-hover:bg-[#00F0FF]/30 transition-all duration-300 mt-1">
+                        <span className="text-[#00F0FF] font-bold text-lg">✓</span>
+                      </div>
+                      <p className="text-gray-300 text-lg leading-relaxed group-hover:text-white transition-colors duration-300">{item}</p>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Closing Statement */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.7 }}
+              viewport={{ once: true }}
+              className="mt-12 text-center"
+            >
+              <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
+                Browse through our categories to see real examples of how professional visualization services can enhance property listings, increase buyer engagement, and accelerate sales. Each image tells a story of attention to detail, technical skill, and creative vision—the hallmarks of our work.
+              </p>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
